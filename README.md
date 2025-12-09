@@ -2,6 +2,9 @@
 ## To reduce project supply-chain risk (e.g., registry compromises like the recent Shai-Hulud incident)
 
 ### Example using pip-tools
+Install requirements:
+`brew install pip-tools` easiest for mac  
+
 1) Use Broad dependencies in `requirements.in` only pinned to Major versions using `~=`. Human editable
 >  numpy~=2.0  
 >  django~=6.0  
