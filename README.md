@@ -2,9 +2,9 @@
 ## To reduce project supply-chain risk (e.g., registry compromises like the recent Shai-Hulud incident)
 
 ### Example using pip-tools
-Install requirements:
+Install requirements:  
 `brew install pip-tools` easiest for mac  
-
+  
 1) Use Broad dependencies in `requirements.in` only pinned to Major versions using `~=`. Human editable
 >  numpy~=2.0  
 >  django~=6.0  
@@ -19,6 +19,6 @@ Install requirements:
  
 5) In CI/CD pipelines run `pip install --require-hashes -r requirements.txt` rather than `pip install` to do a clean install using only versions (SHA based) and depenedencies from the lockfile
 
-
+  
 ### Example using poetry
 See https://github.com/jeremypumphrey/python-poetry-example
